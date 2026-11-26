@@ -1,9 +1,9 @@
 # voca_rs
 
 [![Crates version](https://img.shields.io/crates/v/voca_rs.svg)](https://crates.io/crates/voca_rs)
-[![dependency status](https://deps.rs/crate/voca_rs/1.15.2/status.svg)](https://deps.rs/crate/voca_rs/1.15.2)
-[![Build Status](https://app.travis-ci.com/a-merezhanyi/voca_rs.svg?branch=master)](https://app.travis-ci.com/a-merezhanyi/voca_rs)
-[![codecov](https://codecov.io/gh/a-merezhanyi/voca_rs/branch/master/graph/badge.svg?token=uSEi0L8ivo)](https://codecov.io/gh/a-merezhanyi/voca_rs)
+[![dependency status](https://deps.rs/crate/voca_rs/1.15.3/status.svg)](https://deps.rs/crate/voca_rs/1.15.3)
+[![CI](https://github.com/jlogicsoftware/voca_rs/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/jlogicsoftware/voca_rs/actions/workflows/ci.yml)
+[![docs.rs](https://img.shields.io/docsrs/voca_rs)](https://docs.rs/voca_rs)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **Voca_rs is a Rust library for manipulating [unicode] strings.**
@@ -205,8 +205,10 @@ Build a project: `cargo build` -> `./target/debug`
 
 ## Copyright
 
-Coded by A. Merezhanyi
+Coded by A. Mereżany
 
 ## License
 
-Licensed under [MIT License](LICENSE.md)
+Licensed under [MIT License](LICENSE.md).
+
+Some parts are adapted from [heck](https://github.com/withoutboats/heck) (MIT), [Voca](https://github.com/panzerdp/voca) (MIT) and [Inflector](https://github.com/whatisinternet/Inflector) (BSD-2-Clause). Transliteration is provided by the [unidecode](https://crates.io/crates/unidecode) crate (BSD-3-Clause). See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for details and the full license texts.

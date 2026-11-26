@@ -72,7 +72,9 @@ fn unicode_string_range(subject: &str, start: usize, end: usize) -> String {
 }
 
 fn strip_html_tags(subject: &str) -> String {
-    // https://github.com/panzerdp/voca/blob/master/src/strip/strip_tags.js
+    // Adapted from Voca <https://github.com/panzerdp/voca/blob/master/src/strip/strip_tags.js>,
+    // Copyright (c) 2016 Dmitri Pavlutin, MIT License.
+    // See THIRD-PARTY-NOTICES.md.
     let length = subject.len();
     let mut state: StateMode = StateMode::Output;
     let mut depth = 0;

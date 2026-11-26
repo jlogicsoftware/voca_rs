@@ -329,11 +329,7 @@ pub fn is_digit(subject: &str) -> bool {
 /// // => true
 /// ```
 pub fn is_empty(subject: &str) -> bool {
-    if subject.is_empty() {
-        return true;
-    }
-
-    false
+    subject.is_empty()
 }
 
 /// Checks whether `subject` is is a `foreign_key`.
@@ -359,6 +355,9 @@ pub fn is_empty(subject: &str) -> bool {
 /// // => false
 /// ```
 pub fn is_foreign_key(subject: &str) -> bool {
+    // Adapted from Inflector <https://github.com/whatisinternet/Inflector>,
+    // Copyright 2017 Josh Teeter, BSD-2-Clause License.
+    // See THIRD-PARTY-NOTICES.md.
     subject == crate::chop::foreign_key(subject)
 }
 

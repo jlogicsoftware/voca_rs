@@ -1,7 +1,6 @@
 extern crate voca_rs;
 
 #[cfg(test)]
-
 mod unit {
     mod case;
     mod chop;

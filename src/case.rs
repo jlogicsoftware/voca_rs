@@ -316,13 +316,7 @@ fn snake_and_shouty_snake_case(subject: &str, shouty: bool) -> String {
         0 => subject.to_string(),
         _ => crate::split::words(subject)
             .into_iter()
-            .map(|c| {
-                if shouty {
-                    upper_case(c)
-                } else {
-                    lower_case(c)
-                }
-            })
+            .map(|c| if shouty { upper_case(c) } else { lower_case(c) })
             .collect::<Vec<String>>()
             .join("_"),
     }

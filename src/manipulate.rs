@@ -182,7 +182,7 @@ fn pad_left_right(subject: &str, length: usize, pad: &str, pad_mode: PadMode) ->
             } else {
                 width / 2
             };
-            let add = usize::from(width % 2 != 0);
+            let add = width % 2;
             let prefix = string_to_add[..middle].join("");
             let sufix = string_to_add[..middle + add].join("");
             format!("{}{}{}", prefix, subject, sufix)
