@@ -148,9 +148,7 @@ pub fn count_words(subject: &str, pattern: &str) -> usize {
     fn match_substring(subject: &str, pattern: &str) -> usize {
         match pattern.len() {
             0 => crate::split::words(subject).len(),
-            _ => subject
-                .split_terminator(pattern)
-                .count(),
+            _ => subject.split_terminator(pattern).count(),
         }
     }
     match subject.len() {

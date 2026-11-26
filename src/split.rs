@@ -72,7 +72,9 @@ pub fn split<'a>(subject: &'a str, pattern: &str) -> Vec<&'a str> {
 /// ```
 pub fn words(subject: &str) -> Vec<&str> {
     fn split_camel_case(string: &str) -> Vec<&str> {
-        // https://github.com/withoutboats/heck/blob/master/src/lib.rs
+        // Adapted from heck <https://github.com/withoutboats/heck>,
+        // Copyright (c) 2015 The Rust Project Developers, MIT License.
+        // See THIRD-PARTY-NOTICES.md.
         #[derive(Clone, Copy, PartialEq)]
         enum WordMode {
             /// There have been no lowercase or uppercase characters in the current word.

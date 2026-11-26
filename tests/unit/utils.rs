@@ -2,7 +2,7 @@
 
 #[test]
 fn version() {
-    assert_eq!(voca_rs::utils::VERSION, "1.15.2");
+    assert_eq!(voca_rs::utils::VERSION, "1.15.3");
 }
 #[test]
 fn ascii_letters() {
@@ -53,7 +53,8 @@ fn whitespace() {
     assert_eq!(voca_rs::utils::WHITESPACE, " \t\n\r");
 }
 
-// https://github.com/chowdhurya/rust-unidecode/blob/master/tests/unidecode.rs
+// Adapted from rust-unidecode <https://github.com/chowdhurya/rust-unidecode/blob/master/tests/unidecode.rs>,
+// Copyright (c) 2015, Amit Chowdhury, BSD-3-Clause License. See THIRD-PARTY-NOTICES.md.
 // Tests that every character outputted by the unidecode() function is valid
 // ASCII.
 #[test]
@@ -76,7 +77,8 @@ fn test_all_ascii() {
     }
 }
 
-// https://github.com/chowdhurya/rust-unidecode/blob/master/tests/unidecode.rs
+// Adapted from rust-unidecode <https://github.com/chowdhurya/rust-unidecode/blob/master/tests/unidecode.rs>,
+// Copyright (c) 2015, Amit Chowdhury, BSD-3-Clause License. See THIRD-PARTY-NOTICES.md.
 // These tests were ported directly from the original `Text::Unidecode` Perl
 // module.
 #[test]
@@ -94,7 +96,8 @@ fn test_conversion() {
     assert_eq!(voca_rs::utils::unidecode("げんまい茶"), "genmaiCha ");
 }
 
-// https://github.com/chowdhurya/rust-unidecode/blob/master/tests/unidecode.rs
+// Adapted from rust-unidecode <https://github.com/chowdhurya/rust-unidecode/blob/master/tests/unidecode.rs>,
+// Copyright (c) 2015, Amit Chowdhury, BSD-3-Clause License. See THIRD-PARTY-NOTICES.md.
 #[test]
 fn test_unidecode_char() {
     assert_eq!(voca_rs::utils::unidecode_char('Æ'), "AE");

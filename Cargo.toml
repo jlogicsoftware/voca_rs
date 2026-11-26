@@ -1,26 +1,24 @@
 [package]
 name = "voca_rs"
-version = "1.15.2"
-authors = ["A. Merezhanyi <a.merezhanyi@gmail.com>"]
+version = "1.15.3"
+rust-version = "1.85"
+authors = ["A. Mereżany <a.merezany@gmail.com>"]
 license = "MIT"
 description = "Voca_rs is a Rust library for manipulating [unicode] strings"
 
 documentation = "https://docs.rs/voca_rs/"
-repository = "https://github.com/a-merezhanyi/voca_rs"
+repository = "https://github.com/jlogicsoftware/voca_rs"
 
 keywords = ["string", "case", "snake", "camel", "unicode"]
 categories = ["encoding"]
 readme = "README.md"
-include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE"]
-
-[badges]
-travis-ci = { repository = "a-merezhanyi/voca_rs" }
-codecov = { repository = "a-merezhanyi/voca_rs", branch = "master", service = "github" }
+include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE.md", "THIRD-PARTY-NOTICES.md"]
 
 [dependencies]
-regex = "1.6.0"
-stfu8 = "0.2.5"
-unicode-segmentation = "1.10.0"
+regex = "1.13.2"
+stfu8 = "0.2.7"
+unicode-segmentation = "1.13.3"
+unidecode = "0.3.0"
 
 [profile.dev]
 lto = true

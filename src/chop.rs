@@ -297,7 +297,9 @@ pub fn first(subject: &str, length: usize) -> String {
 /// // => "foo_bar_id"
 /// ```
 pub fn foreign_key(subject: &str) -> String {
-    /* https://docs.rs/crate/Inflector/0.11.4 */
+    // Adapted from Inflector <https://github.com/whatisinternet/Inflector>,
+    // Copyright 2017 Josh Teeter, BSD-2-Clause License.
+    // See THIRD-PARTY-NOTICES.md.
     match subject.len() {
         0 => subject.to_string(),
         _ => {

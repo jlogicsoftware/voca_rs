@@ -3,7 +3,7 @@
 #[test]
 fn example_functions() {
     let input_string = "LazyLoad with XMLHttpRequest and snake_case";
-    let string_in_words = voca_rs::split::words(&input_string);
+    let string_in_words = voca_rs::split::words(input_string);
     // => ["Lazy", "Load", "with", "XML", "Http", "Request", "and", "snake", "case"]
     assert_eq!(
         string_in_words,
@@ -15,7 +15,7 @@ fn example_functions() {
         words_in_string,
         "Lazy Load with XML Http Request and snake case"
     );
-    let truncated_string = voca_rs::chop::prune(&words_in_string, 21, "");
+    let truncated_string = voca_rs::chop::prune(words_in_string, 21, "");
     // => "Lazy Load with XML..."
     assert_eq!(truncated_string, "Lazy Load with XML...");
     let sliced_string = voca_rs::chop::slice(&truncated_string, 5, -2);
